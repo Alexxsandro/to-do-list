@@ -4,21 +4,13 @@
 
 
 	function Task(name, completed, createdAt, updatedAt){
-		 
-        
-      
-        // o objeto retornado por essa funcao deve ter quatro propriedades:
-        //  - name - string - obrigatório, 
-        //  - completed - boolean - opcional, false é o default, 
-        //  - createdAt - timestamp - opcional, timestamp atual é o valor default) 
-        //  - updatedAt - timestamp - opcional, null é o valor default
-        // o objeto retornado por essa funcao deve ter um método chamado toggleDone, que deve inverter o boolean completed
-	    this.name = name
-        this.completed = completed || false
-        this.createdAt = createdAt || Date.now()
-        this.updatedAt = updatedAt || null
-        this.toggleDone = function(){
-            this.completed = !this.completed
+		       
+	   this.name = name
+           this.completed = completed || false
+           this.createdAt = createdAt || Date.now()
+           this.updatedAt = updatedAt || null
+           this.toggleDone = function(){
+           this.completed = !this.completed
         }
     }
 
